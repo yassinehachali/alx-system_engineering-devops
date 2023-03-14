@@ -1,0 +1,14 @@
+#!/bin/bash
+# Script that lists all local variables, environment variables, and functions.
+
+# List local variables
+echo "Local variables:"
+echo "$(set | grep '^[^=]*=')"
+
+# List environment variables
+echo "Environment variables:"
+echo "$(env)"
+
+# List functions
+echo "Functions:"
+echo "$(declare -F)"
